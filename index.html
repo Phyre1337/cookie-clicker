@@ -1,0 +1,31 @@
+<html>
+    <head>
+
+        <!--Bootstrap 4-->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <script type="text/javascript" src="script.js"></script>
+        <link rel="stylesheet" href="style.css">
+
+    </head>
+
+    <body onload="startAuto()">
+
+        <h1 class="title">Cookie Clicker</h1>
+        <br>
+        <div class="center">
+        <h3 id="cookieBalance">Cookies: 0</h3>
+        </div>
+        <br>
+        <button onClick="increaseClickers()">Buy 1 clicker.</button>
+        <br><br><br><br>
+
+        <div class="center">
+        <img draggable="false" id="cookie" src="Images/cookie.png" onClick="cookieClick()">    
+        </div>
+
+    </body>
+</html>
