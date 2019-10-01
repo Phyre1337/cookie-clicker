@@ -1,6 +1,7 @@
 let COOKIE = document.getElementById("cookie");
 let cookies = 0;
 let autoClick = 0;
+let clickerPrice = 20;
 
 
 function cookieClick()
@@ -36,11 +37,14 @@ function startAuto()
 
 function increaseClickers()
 {
-    if (cookies >= 20)
+    if (cookies >= clickerPrice)
     {
         autoClick += 1;
-        cookies -= 20;
+        cookies -= clickerPrice;
         document.getElementById("cookieBalance").innerHTML = `Cookies: ${cookies}`;
+        clickerPrice *= 1.3;
+        clickerPrice = parseInt(clickerPrice);
+        document.getElementById("price").innerHTML = `Price of clicker: ${clickerPrice}`;
     }
     else 
     {
